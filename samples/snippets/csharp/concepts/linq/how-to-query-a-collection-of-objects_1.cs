@@ -69,7 +69,11 @@
 
             foreach (var item in highScores)
             {
-                Console.WriteLine($"item.Name:-15}{item.Score}}")
+                //Console.WriteLine($"item.Name:-15}{item.Score}}")
+                
+               
+                there is a little mistake in console.writeline statement it should be likes this
+                     Console.WriteLine($"{item.Name:-15} {item.Score}");
             }
         }
     }
