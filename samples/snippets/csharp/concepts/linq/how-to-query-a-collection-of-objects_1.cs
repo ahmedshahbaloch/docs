@@ -52,13 +52,7 @@
         };
         #endregion
 
-        //Helper method, used in GroupByRange.
-        protected static int GetPercentile(Student s)
-        {
-            double avg = s.ExamScores.Average();
-            return avg > 0 ? (int)avg / 10 : 0;
-        }
-
+      
         
 
         public void QueryHighScores(int exam, int score)
@@ -69,7 +63,11 @@
 
             foreach (var item in highScores)
             {
-                Console.WriteLine($"item.Name:-15}{item.Score}}")
+                //Console.WriteLine($"item.Name:-15}{item.Score}}")
+                
+               
+                there is a little mistake in console.writeline statement it should be likes this
+                     Console.WriteLine($"{item.Name:-15} {item.Score}");
             }
         }
     }
